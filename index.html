@@ -7,7 +7,7 @@ layout: page
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     </head>
     <style>
-    .container {
+    .text {
         margin: 10px auto;
         font-size: larger;
         text-align: center;
@@ -20,13 +20,44 @@ layout: page
         line-height: 1;
         letter-spacing: -1px;
         font-family: 'Inconsolata', monospace;
-    
+      }
+      #cursor{
+          font-size: larger;
+          font-family: 'Inconsolata', monospace;
+          font-size: 1em;
+      }
+      #college{
+          font-size: larger;
+          font-family: 'Inconsolata', monospace;
+          font-size: 1em;
+          color: #00009c;
+          
+      }
+      audio {
+        width: 50px;
       }
     </style>
-    <div class = "container">
-        <p>Hi! My name is Aneesh.</p>
-        <p>Currently, I study Computer Science and Electrical Engineering at Duke University.</p>
-        <p>This is space for a work in progress personal website.</p>
+    <div class = "text">
+        <p>
+          Hi! My name is Aneesh.<strong><span id="cursor">|</span></strong>
+          <script>
+              var cursor = true;
+              var speed = 500;
+              setInterval(() => {
+                if(cursor) {
+                  document.getElementById('cursor').style.opacity = 0;
+                  cursor = false;
+                }else {
+                  document.getElementById('cursor').style.opacity = 1;
+                  cursor = true;
+                }
+              }, speed);
+          </script></p>
+          <!-- <p><audio controls>
+            <source src="https://www.nameshouts.com/libs/media/aneesh_hi.mp3" >
+          </audio></p> -->
+        <p>Currently, I study Computer Science and Electrical Engineering at <span id = "college" title = "gthc, gthc">Duke University</span>.</p>
+        <p></p>
     </div>
 </html>
 
