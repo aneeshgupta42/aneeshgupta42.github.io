@@ -34,6 +34,19 @@ title: Home | Aneesh Gupta
           color: #00009c;
           
       }
+      #english{
+        font-size: larger;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1em;
+      }
+      #hindi{
+        font-size: larger;
+        text-align: center;
+        font-family: 'Laila', serif;
+        font-size: 1em;
+      }
+
       audio {
         width: 50px;
       }
@@ -43,9 +56,9 @@ title: Home | Aneesh Gupta
         <img src="https://lh3.googleusercontent.com/proxy/LlLAoPQ8BwsfBFUm2XAXNqm6vYGm5-T6a-7u96tTBHKjFHOhtfqyDawETSe3H0FaE46cPDFMgJOSs4uzhFec-a7y" alt="rocket" width="120"/>
 
         <p>
-          Hi! My name is Aneesh Gupta.<strong><span id="cursor">|</span></strong>
+          Hi! My name is <span id="english">Aneesh Gupta</span><strong><span id="cursor">|</span></strong>
           <script>
-              var cursor = true;
+           var cursor = true;
               var speed = 500;
               setInterval(() => {
                 if(cursor) {
@@ -55,11 +68,8 @@ title: Home | Aneesh Gupta
                   document.getElementById('cursor').style.opacity = 1;
                   cursor = true;
                 }
-              }, speed);
+                }, speed);
           </script></p>
-          <!-- <p><audio controls>
-            <source src="https://www.nameshouts.com/libs/media/aneesh_hi.mp3" >
-          </audio></p> -->
         <p>I study Computer Science and Electrical Engineering at <span id = "college" title = "gthc, gthc">Duke University</span>.</p>
         <p>This is space for my work-in-progress personal site.</p>
     </div>
