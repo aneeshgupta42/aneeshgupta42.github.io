@@ -3,76 +3,102 @@ layout: mydefault
 title: Home | Aneesh Gupta
 ---
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Laila|Rozha+One|Sarpanch&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    </head>
-    <style>
-    .text {
-        margin: 10px auto;
-        font-size: larger;
-        text-align: center;
-        font-family: 'Inconsolata', monospace;
-        font-size: 1em;
-      }
-      h1 {
-        margin: 20px 0;
-        font-size: 4em;
-        line-height: 1;
-        letter-spacing: -1px;
-        font-family: 'Inconsolata', monospace;
-      }
-      #cursor{
-          font-size: larger;
-          font-family: 'Inconsolata', monospace;
-          font-size: 1em;
-      }
-      #college{
-          font-size: larger;
-          font-family: 'Inconsolata', monospace;
-          font-size: 1em;
-          color: #00009c;
-          
-      }
-      #english{
-        font-size: larger;
-        text-align: center;
-        font-family: 'Inconsolata', monospace;
-        font-size: 1em;
-      }
-      #hindi{
-        font-size: larger;
-        text-align: center;
-        font-family: 'Laila', serif;
-        font-size: 1em;
-      }
 
-      audio {
-        width: 50px;
-      }
-    </style>
-    <body>
-    <div class = "text">
-        <img src="/assets/images/rocket.gif" alt="rocket" width="120"/>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<style>
+  .text {
+    margin: 10px auto;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+  }
 
-        <p>
-          Hi! My name is <span id="english">Aneesh Gupta</span><strong><span id="cursor">|</span></strong>
-          <script>
-           var cursor = true;
-              var speed = 500;
-              setInterval(() => {
-                if(cursor) {
-                  document.getElementById('cursor').style.opacity = 0;
-                  cursor = false;
-                }else {
-                  document.getElementById('cursor').style.opacity = 1;
-                  cursor = true;
-                }
-                }, speed);
-          </script></p>
-        <p>I study Computer Science and Electrical Engineering at <span id = "college" title = "gthc, gthc">Duke University</span>.</p>
-        <p>This is space for my work-in-progress personal site.</p>
-    </div>
-  </body>
+  .current {
+    margin: 0 auto;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    color:rgb(97, 5, 5);
+  }
+
+  h1 {
+    margin: 20px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  #cursor {
+    font-size: larger;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+  }
+
+  #college {
+    font-size: larger;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    color: #00009c;
+  }
+</style>
+
+<body>
+  <div class="text">
+    <audio id="myAudio">
+      <source src="assets/images/aneesh_hi.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <img src="/assets/images/rocket.gif" alt="rocket" width="120" />
+    <p>
+      Hi! My name is <span id="english">Aneesh Gupta.</span><strong><span id="cursor">|</span></strong>
+      <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() {
+          x.play();
+        }
+        var cursor = true;
+        var speed1 = 500;
+        var speed2 = 3000;
+        setInterval(() => {
+          var name = document.getElementById("english");
+          if (name.textContent == "Aneesh Gupta.") {
+            name.textContent = "अनीश गुपता.  ";
+            name.style.fontFamily = 'Halant', serif;
+          }
+          else {
+            name.textContent = "Aneesh Gupta.";
+            name.style.fontFamily = 'Inconsolata', monospace;
+          }
+        }, speed2);
+
+        setInterval(() => {
+          if (cursor) {
+            document.getElementById('cursor').style.opacity = 0;
+            cursor = false;
+          } else {
+            document.getElementById('cursor').style.opacity = 1;
+            cursor = true;
+          }
+        }, speed1);
+      </script>
+    </p>
+    <p>I study Computer Science and Electrical Engineering @ <span id="college" title="gthc, gthc">Duke
+        University</span>.</p>
+    <p>I like writing code, learning math, philosophy and reading history.</p>
+    <p>At Duke I also T.A CS courses like <em>Interdisciplinary Computing</em>, and fool around with computer vision and
+      satellite imagery.</p>
+  </div>
+  <div class = "current">
+      <li><strong>Reading: </strong>City of Djinns <strike>The Emperor's New Mind</strike></li>
+      <li><strong>Watching: </strong>Money Heist <strike>Special Ops</strike> <strike>The Witcher</strike></li>
+      <li><strong>Learning: </strong>Dynamical Systems <strike>Shannon's Theorem</strike></li>
+  </div>
+</body>
+
 </html>
-
