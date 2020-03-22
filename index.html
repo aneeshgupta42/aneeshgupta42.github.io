@@ -1,52 +1,16 @@
 ---
 layout: mydefault
-title: Home | Aneesh Gupta
+title: Aneesh Gupta
 ---
 <html>
 
 <head>
+  <link href="/assets/main.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-  .text {
-    margin: 10px auto;
-    font-size: larger;
-    text-align: justify;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
-  }
-
-  .current {
-    margin: 0 auto;
-    font-size: larger;
-    text-align: justify;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
-    color:rgb(97, 5, 5);
-  }
-
-  h1 {
-    margin: 20px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-    font-family: 'Inconsolata', monospace;
-  }
-
-  #cursor {
-    font-size: larger;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
-  }
-
-  #college {
-    font-size: larger;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
-    color: #00009c;
-  }
-</style>
 <body>
   <div class="text">
     <audio id="myAudio">
@@ -55,7 +19,7 @@ title: Home | Aneesh Gupta
     </audio>
     <center><img src="/assets/images/rocket.gif" alt="rocket" width="120" /></center>
     <p>
-      Hi! My name is <span id="english">Aneesh Gupta.</span><strong><span id="cursor">|</span></strong>
+      Hi! My name is <span onclick="playAudio()"><i class="fa fa-volume-up"> </i></span> <span id="english">Aneesh Gupta.</span><strong><span id="cursor">|</span></strong>
       <script>
         var x = document.getElementById("myAudio");
         function playAudio() {
@@ -67,8 +31,8 @@ title: Home | Aneesh Gupta
         setInterval(() => {
           var name = document.getElementById("english");
           if (name.textContent == "Aneesh Gupta.") {
-            name.textContent = "अनीश गुपता.  ";
-            name.style.fontFamily = 'Halant', serif;
+            name.textContent =    "अनीश गुप्ता.   ";
+            name.style.fontFamily = 'Hind', sans-serif;
           }
           else {
             name.textContent = "Aneesh Gupta.";
@@ -89,7 +53,7 @@ title: Home | Aneesh Gupta
     </p>
     <p>I study Computer Science and Electrical Engineering @ <span id="college" title="gthc, gthc">Duke
         University</span>.</p>
-    <p>I like writing code, learning math, philosophy and reading history.</p>
+    <p>I love writing code, learning math, philosophy and reading history.</p>
     <p>At Duke I also T.A CS courses like <em>Interdisciplinary Computing</em>, and fool around with computer vision and
       satellite imagery.</p>
   </div>
