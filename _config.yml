@@ -23,7 +23,7 @@ email: aneesh.gupta@duke.edu
 description: >- # this means to ignore newlines until "baseurl:"
   My tiny, virtual corner on the interwebs.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "aneeshgupta.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wwww.aneesh.wtf" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  aneeshgupta42
 linkedin_username: aneeshgupta42
 
