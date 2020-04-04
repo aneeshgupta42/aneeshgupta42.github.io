@@ -4,15 +4,30 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   padding: 0; 
 }
 
+canvas {
+  display: block;
+}
+
+#particles-js {
+  margin: 0; 
+  padding: 0; 
+  position: absolute;
+  width: 55%;
+  height: 83%;
+  background:  #fdfdfd;
+  display: flex; flex-direction: column; 
+}
+
 .text {
-  margin: 10px auto;
+  position:relative;
+  margin: 10px sauto;
   font-size: larger;
   text-align: center;
   font-family: 'Inconsolata', monospace;
   font-size: 1em;
 }
 
-.current {
+#current {
   margin: 0 auto;
   font-size: larger;
   text-align: center;
