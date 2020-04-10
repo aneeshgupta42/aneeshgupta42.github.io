@@ -31,6 +31,15 @@ img{
   font-size: 1em;
 }
 
+.projects {
+  position:relative;
+  margin: 10px sauto;
+  font-size: larger;
+  text-align: left;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+}
+
 #current {
   margin: 0 auto;
   font-size: larger;
