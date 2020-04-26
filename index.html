@@ -20,8 +20,12 @@ title: Home
       <source src="assets/images/aneesh_hi.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <br>
     <!-- <center><img src="/assets/images/rocket.gif" alt="rocket" width="120" /></center> -->
     <center><img src="/assets/images/rugged.png" alt="rocket" width="130" border-radius="50%"/></center>
+      {%- if site.facebook_username -%}<a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a>{%- endif -%}
+      {%- if site.github_username -%}<a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
+      {%- if site.linkedin_username -%}<a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>{%- endif -%}   
     <p>
       Hi! My name is <span onclick="playAudio()"><i class="fa fa-volume-up"> </i></span> <span id="english">Aneesh
         Gupta.</span><strong><span id="cursor">|</span></strong>
@@ -36,7 +40,7 @@ title: Home
     <p>Last summer, I built things for the <span id="work"><a href="https://paydash.in/"
           style="color:#be8405">PayDash</a></span> project at <a href="https://epod.cid.harvard.edu/"
         style="color:#c90016">Evidence for Policy Design</a>. You can read more about my work <a
-        href="/assets/images/aneesh_gupta_resume.pdf" style="color:rgb(10, 181, 187)" target="_blank"><u>here</u></a>!
+        href="resume.pdf" style="color:rgb(10, 181, 187)" target="_blank"><u>here</u></a>!
     </p>
     <script type="text/javascript" src="/assets/text_effects.js"></script>
     <span class="current">
