@@ -57,6 +57,18 @@ img{
   color:rgb(97, 5, 5);
 }
 
+#bae-genuine {
+  color:rgba(243, 8, 8, 0.637);
+}
+#bae-fun {
+  color:rgba(117, 10, 204, 0.842);
+}
+
+#bae-countdown {
+  font-weight: bold;
+  color:rgba(8, 133, 182, 0.658);
+}
+
 h1 {
   margin: 20px 0;
   font-size: 4em;
