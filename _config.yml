@@ -27,6 +27,7 @@ url: "aneeshgupta.me" # the base hostname & protocol for your site, e.g. http://
 github_username:  aneeshgupta42
 linkedin_username: aneeshgupta42
 facebook_username: xneesh
+twitter_username: aneesh__gupta
 
 # Build settings
 markdown: kramdown
