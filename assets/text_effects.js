@@ -4,12 +4,12 @@ var x = document.getElementById("myAudio");
         }
         var cursor = true;
         var speed1 = 500;
-        var speed2 = 3250;
+        var speed2 = 3000;
         setInterval(() => {
           var name = document.getElementById("english");
           if (name.textContent == "Aneesh Gupta.") {
             name.textContent = "अनीश गुप्ता.   ";
-            name.style.fontFamily = 'Hind', sans - serif;
+            name.style.fontFamily = 'Hind', sans-serif;
           }
           else {
             name.textContent = "Aneesh Gupta.";
