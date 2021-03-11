@@ -1,0 +1,30 @@
+---
+layout: mydefault
+title: Words
+---
+<html>
+
+<head>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="projects" style="text-align:left;">
+        <h2 style="font-size:1.2em; font-weight:700; color:rgb(122, 2, 2)">Some stuff I've written:</h2>
+    </div>
+    <div class="center" style="font-size:1.1em; font-family: Inconsolata, monospace;">
+        <ul>
+            <li><a href="/notes.html">Random Notes</a></li>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+    </div>
+</body>
+
+</html>
