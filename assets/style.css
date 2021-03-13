@@ -15,7 +15,7 @@ body, html {
 }
 
 canvas {
-  display: block;
+  display: flex;
 }
 
 #dp{
@@ -25,9 +25,9 @@ canvas {
 #particles-js {
   margin: 0; 
   padding: 0; 
-  position: absolute;
-  width: 55%;
-  height: 70%;
+  position: fixed;
+  width: 100%;
+  height: 55%;
   background:  #fdfdfd;
   display: flex;
 }

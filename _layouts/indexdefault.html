@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <head>
+        <link href="/assets/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/assets/images/asgilver.jpg">
+        <meta charset="utf-8">
+        <title>Aneesh Gupta</title>
+      </head>
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div id="particles-js">
+        <script type="text/javascript" src="/assets/particles.js"></script>
+        <script type="text/javascript" src="/assets/app.js"></script>
+      </div>
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

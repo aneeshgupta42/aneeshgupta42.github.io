@@ -23,13 +23,13 @@ particlesJS(
         }
       },
       "color": {
-        "value": "#595959"
+        "value": "#064984"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#595959"
+          "color": "#064984"
         },
         "polygon": {
           "nb_sides": 5
@@ -41,7 +41,7 @@ particlesJS(
         }
       },
       "opacity": {
-        "value": 0.15,
+        "value": 0.18,
         "random": false,
         "anim": {
           "enable": false,
@@ -90,8 +90,8 @@ particlesJS(
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
-          "mode": "push"
+          "enable": true,
+          "mode": "repulse"
         },
         "resize": true
       },
