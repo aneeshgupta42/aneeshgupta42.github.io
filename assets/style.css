@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 }
 
 body, html {
-  cursor: url(https://images.squarespace-cdn.com/content/52c77bc2e4b0c06fbd14fa04/1592027903664-LXD9PEYA5XI7THM4GPHZ/Ellipse+5%402x.png?content-type=image%2Fpng), auto !important;
+  cursor: url(/assets/cursor2.png), auto !important;
 }
 .iconify { 
   font-size: 4em;
@@ -157,11 +157,12 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
+a { color: #2a7ae2; text-decoration: none; 
+cursor: url(/assets/cursor.png);}
 
 a:visited { color: #1756a9; }
 
-a:hover { color: #111; text-decoration: underline; }
+a:hover { cursor: url(/assets/cursor.png), auto !important; color: #111; text-decoration: underline; }
 
 .social-media-list a:hover { text-decoration: none; }
 
