@@ -121,7 +121,14 @@ h1 {
   font-size: larger;
   font-family: 'Inconsolata', monospace;
   font-size: 1em;
-  color: #00009c;
+  color: #17c4a9;
+}
+
+#paper {
+  font-size: larger;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  color: #05667ec5;
 }
 
 #work{
